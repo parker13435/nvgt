@@ -1,0 +1,4 @@
+random_well::void seed(uint = random_seed ( ))
+random_well::uint next()
+random_well::float nextf()
+random_well::int range(int, int)

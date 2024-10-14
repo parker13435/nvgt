@@ -1,0 +1,4 @@
+random_xorshift::void seed(uint64 = random_seed64 ( ))
+random_xorshift::uint64 next()
+random_xorshift::float nextf()
+random_xorshift::int range(int, int)

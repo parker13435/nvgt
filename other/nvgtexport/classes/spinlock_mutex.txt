@@ -1,0 +1,3 @@
+spinlock_mutex::void lock()
+spinlock_mutex::bool try_lock()
+spinlock_mutex::void unlock()

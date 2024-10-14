@@ -1,0 +1,4 @@
+random_gamerand::void seed(uint = random_seed ( ))
+random_gamerand::uint next()
+random_gamerand::float nextf()
+random_gamerand::int range(int, int)

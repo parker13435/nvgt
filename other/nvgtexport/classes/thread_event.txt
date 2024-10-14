@@ -1,0 +1,5 @@
+thread_event::void set()
+thread_event::void wait()
+thread_event::void wait(uint)
+thread_event::bool try_wait(uint)
+thread_event::void reset()

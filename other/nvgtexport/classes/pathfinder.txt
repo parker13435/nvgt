@@ -1,0 +1,7 @@
+const = float total_cost;
+int = search_range 0;
+bool = automatic_reset 0;
+pathfinder::void set_callback_function(pathfinder_callback@)
+pathfinder::void cancel()
+pathfinder::void reset()
+pathfinder::array<vector>@ find(int, int, int, int, int, int, any@ = null)

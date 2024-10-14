@@ -1,0 +1,6 @@
+async<T>::const T& get_value() property
+async<T>::bool get_complete() const property
+async<T>::bool get_failed() const property
+async<T>::string get_exception() const property
+async<T>::void wait()
+async<T>::bool try_wait(uint)

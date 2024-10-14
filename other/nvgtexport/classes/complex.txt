@@ -1,0 +1,15 @@
+float = i 0;
+complex::complex& opAddAssign(const complex&in)
+complex::complex& opSubAssign(const complex&in)
+complex::complex& opMulAssign(const complex&in)
+complex::complex& opDivAssign(const complex&in)
+complex::bool opEquals(const complex&in) const
+complex::complex opAdd(const complex&in) const
+complex::complex opSub(const complex&in) const
+complex::complex opMul(const complex&in) const
+complex::complex opDiv(const complex&in) const
+complex::float abs() const
+complex::complex get_ri() const property
+complex::complex get_ir() const property
+complex::void set_ri(const complex&in) property
+complex::void set_ir(const complex&in) property

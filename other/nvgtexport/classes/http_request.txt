@@ -1,0 +1,58 @@
+http_request::http_request& opAssign(const http_request&in)
+http_request::const string& get_opIndex(const string&in) const property
+http_request::void set_opIndex(const string&in, const string&in) property
+http_request::void set(const string&in, const string&in)
+http_request::void add(const string&in, const string&in)
+http_request::const string& get(const string&in, const string&in = \\) const
+http_request::bool exists(const string&in) const
+http_request::bool empty() const
+http_request::uint64 size() const
+http_request::void erase(const string&in)
+http_request::void clear()
+http_request::const string& name_at(uint)
+http_request::const string& value_at(uint)
+http_request::internet_message_header@ opImplCast()
+http_request::bool write(datastream@) const
+http_request::bool read(datastream@)
+http_request::bool get_auto_decode() const property
+http_request::void set_auto_decode(bool) property
+http_request::string get_decoded(const string&in, const string&in = \\)
+http_request::int get_field_limit() const property
+http_request::void set_field_limit(int) property
+http_request::int get_name_length_limit() const property
+http_request::void set_name_length_limit(int) property
+http_request::int get_value_length_limit() const property
+http_request::void set_value_length_limit(int) property
+http_request::bool has_token(const string&in, const string&in)
+http_request::void set_version(const string&in) property
+http_request::const string& get_version() const property
+http_request::void set_content_length(int64) property
+http_request::int64 get_content_length() const property
+http_request::bool get_has_content_length() const property
+http_request::void set_transfer_encoding(const string&in) property
+http_request::string get_transfer_encoding() const property
+http_request::void set_chunked_transfer_encoding(bool) property
+http_request::bool get_chunked_transfer_encoding() const property
+http_request::void set_content_type(const string&in) property
+http_request::string get_content_type() const property
+http_request::void set_keep_alive(bool) property
+http_request::bool get_keep_alive() const property
+http_request::void set_method(const string&in) property
+http_request::const string& get_method() const property
+http_request::void set_uri(const string&in) property
+http_request::const string& get_uri() const property
+http_request::void set_host(const string&in) property
+http_request::void set_host(const string&in, uint16) property
+http_request::const string& get_host() const property
+http_request::void set_cookies(const name_value_collection&inout)
+http_request::void get_cookies(name_value_collection&inout) const
+http_request::bool get_has_credentials() const property
+http_request::void get_credentials(string&inout, string&inout) const
+http_request::void set_credentials(const string&in, const string&in)
+http_request::void remove_credentials()
+http_request::bool get_expect_continue() const property
+http_request::void set_expect_continue(bool) property
+http_request::bool get_has_proxy_credentials() const property
+http_request::void get_proxy_credentials(string&inout, string&inout) const
+http_request::void set_proxy_credentials(const string&in, const string&in)
+http_request::void remove_proxy_credentials()

@@ -271,6 +271,11 @@ bool ShowNVGTWindow(const std::string& window_title) {
 	g_WindowThreadId = thread_current_thread_id();
 	return true;
 }
+bool SetNVGTWindowFullscreen() {
+	if (!g_WindowHandle)
+		return false;
+	return SDL_SetWindowFullscreen(g_WindowHandle, SDL_WINDOW_FULLSCREEN) == 0;
+}
 bool DestroyNVGTWindow() {
 	if (!g_WindowHandle) return false;
 	SDL_DestroyWindow(g_WindowHandle);
@@ -435,6 +440,7 @@ void RegisterUI(asIScriptEngine* engine) {
 	engine->RegisterGlobalFunction(_O("void next_keyboard_layout()"), asFUNCTION(next_keyboard_layout), asCALL_CDECL);
 	engine->RegisterGlobalFunction("bool set_application_name(const string& in name)", asFUNCTION(set_application_name), asCALL_CDECL);
 	engine->RegisterGlobalFunction("bool show_window(const string& in title)", asFUNCTION(ShowNVGTWindow), asCALL_CDECL);
+	engine->RegisterGlobalFunction("bool set_window_fullscreen()",asFUNCTION(SetNVGTWindowFullscreen),asCALL_CDECL);
 	engine->RegisterGlobalFunction("bool destroy_window()", asFUNCTION(DestroyNVGTWindow), asCALL_CDECL);
 	engine->RegisterGlobalFunction("bool hide_window()", asFUNCTION(HideNVGTWindow), asCALL_CDECL);
 	engine->RegisterGlobalFunction("bool focus_window()", asFUNCTION(FocusNVGTWindow), asCALL_CDECL);

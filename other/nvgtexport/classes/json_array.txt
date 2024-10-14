@@ -1,0 +1,18 @@
+json_array::var@ get_opIndex(uint) property
+json_array::void set_opIndex(uint, const var&in) property
+json_array::void add(var@)
+json_array::var@ opCall(const string&in) const
+json_array::json_array@ get_array(uint) const
+json_array::json_object@ get_object(uint) const
+json_array::string stringify(uint = 0, int = - 1)
+json_array::void stringify(datastream@, uint = 0, int = - 1)
+json_array::uint length()
+json_array::uint size()
+json_array::bool get_escape_unicode() property
+json_array::void set_escape_unicode(bool) property
+json_array::bool get_empty() property
+json_array::void clear()
+json_array::void remove(uint)
+json_array::bool is_array(uint)
+json_array::bool is_null(uint)
+json_array::bool is_object(uint)

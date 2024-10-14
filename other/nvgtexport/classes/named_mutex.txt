@@ -1,0 +1,3 @@
+named_mutex::void lock()
+named_mutex::bool try_lock()
+named_mutex::void unlock()

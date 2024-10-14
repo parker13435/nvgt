@@ -1,0 +1,14 @@
+const = string failures;
+timer_queue::void set(const string&in, timer_callback@, const string&in, uint64, bool = false)
+timer_queue::void set(const string&in, timer_callback@, uint64, bool = false)
+timer_queue::uint64 elapsed(const string&in) const
+timer_queue::uint64 timeout(const string&in) const
+timer_queue::bool exists(const string&in) const
+timer_queue::bool restart(const string&in)
+timer_queue::bool is_repeating(const string&in) const
+timer_queue::bool set_timeout(const string&in, uint64, bool = false)
+timer_queue::bool delete(const string&in)
+timer_queue::void flush()
+timer_queue::void reset()
+timer_queue::uint size() const
+timer_queue::bool loop(int = 0, int = 100)

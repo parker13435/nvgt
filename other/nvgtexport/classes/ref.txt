@@ -1,0 +1,5 @@
+ref::void opCast(?&out)
+ref::ref& opHndlAssign(const ref&in)
+ref::ref& opHndlAssign(const ?&in)
+ref::bool opEquals(const ref&in) const
+ref::bool opEquals(const ?&in) const

@@ -1,0 +1,21 @@
+pack::bool set_pack_identifier(const string&in)
+pack::bool open(const string&in, uint = PACK_OPEN_MODE_READ, bool = false)
+pack::bool close()
+pack::bool add_file(const string&in, const string&in, bool = false)
+pack::bool add_memory(const string&in, const string&in, bool = false)
+pack::bool delete_file(const string&in)
+pack::bool file_exists(const string&in) const
+pack::string get_file_name(int) const
+pack::array<string>@ list_files() const
+pack::uint get_file_size(const string&in) const
+pack::uint get_file_offset(const string&in) const
+pack::string read_file(const string&in, uint, uint) const
+pack::bool raw_seek(int)
+pack::bool stream_close(uint)
+pack::uint stream_open(const string&in, uint) const
+pack::string stream_read(uint, uint) const
+pack::uint stream_pos(uint) const
+pack::uint stream_seek(uint, uint, int) const
+pack::uint stream_size(uint) const
+pack::bool get_active() const property
+pack::uint get_size() const property

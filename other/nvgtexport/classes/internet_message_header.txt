@@ -1,0 +1,28 @@
+internet_message_header::internet_message_header& opAssign(const internet_message_header&in)
+internet_message_header::const string& get_opIndex(const string&in) const property
+internet_message_header::void set_opIndex(const string&in, const string&in) property
+internet_message_header::void set(const string&in, const string&in)
+internet_message_header::void add(const string&in, const string&in)
+internet_message_header::const string& get(const string&in, const string&in = \\) const
+internet_message_header::bool exists(const string&in) const
+internet_message_header::bool empty() const
+internet_message_header::uint64 size() const
+internet_message_header::void erase(const string&in)
+internet_message_header::void clear()
+internet_message_header::const string& name_at(uint)
+internet_message_header::const string& value_at(uint)
+internet_message_header::name_value_collection@ opImplCast()
+internet_message_header::bool write(datastream@) const
+internet_message_header::bool read(datastream@)
+internet_message_header::bool get_auto_decode() const property
+internet_message_header::void set_auto_decode(bool) property
+internet_message_header::string get_decoded(const string&in, const string&in = \\)
+internet_message_header::int get_field_limit() const property
+internet_message_header::void set_field_limit(int) property
+internet_message_header::int get_name_length_limit() const property
+internet_message_header::void set_name_length_limit(int) property
+internet_message_header::int get_value_length_limit() const property
+internet_message_header::void set_value_length_limit(int) property
+internet_message_header::bool has_token(const string&in, const string&in)
+internet_message_header::http_request@ opCast()
+internet_message_header::http_response@ opCast()

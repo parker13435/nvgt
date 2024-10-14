@@ -1,0 +1,6 @@
+sound_environment::bool add_material(const string&in, float, float, float, float, float, float, float, bool = false)
+sound_environment::bool add_box(const string&in, float, float, float, float, float, float)
+sound_environment::mixer@ new_mixer()
+sound_environment::sound@ new_sound()
+sound_environment::void update()
+sound_environment::void set_listener(float, float, float, float)

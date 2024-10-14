@@ -1,0 +1,14 @@
+name_value_collection::name_value_collection& opAssign(const name_value_collection&in)
+name_value_collection::const string& get_opIndex(const string&in) const property
+name_value_collection::void set_opIndex(const string&in, const string&in) property
+name_value_collection::void set(const string&in, const string&in)
+name_value_collection::void add(const string&in, const string&in)
+name_value_collection::const string& get(const string&in, const string&in = \\) const
+name_value_collection::bool exists(const string&in) const
+name_value_collection::bool empty() const
+name_value_collection::uint64 size() const
+name_value_collection::void erase(const string&in)
+name_value_collection::void clear()
+name_value_collection::const string& name_at(uint)
+name_value_collection::const string& value_at(uint)
+name_value_collection::internet_message_header@ opCast()

@@ -1,0 +1,4 @@
+random_pcg::void seed(uint = random_seed ( ))
+random_pcg::uint next()
+random_pcg::float nextf()
+random_pcg::int range(int, int)

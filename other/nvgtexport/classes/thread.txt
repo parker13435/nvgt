@@ -1,0 +1,10 @@
+thread::int get_id() const property
+thread::void set_priority(thread_priority) property
+thread::thread_priority get_priority() const property
+thread::void set_name(const string&in) property
+thread::string get_name() const property
+thread::void join()
+thread::bool join(uint)
+thread::bool get_running() const property
+thread::void start(thread_callback@, dictionary@ = null)
+thread::void wake_up()

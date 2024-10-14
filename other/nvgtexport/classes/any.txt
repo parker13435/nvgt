@@ -1,0 +1,7 @@
+any::any& opAssign(any&in)
+any::void store(?&in)
+any::void store(const int64&in)
+any::void store(const double&in)
+any::bool retrieve(?&out)
+any::bool retrieve(int64&out)
+any::bool retrieve(double&out)

@@ -1,0 +1,29 @@
+ftp_client::void set_passive(bool, bool = true)
+ftp_client::bool get_passive() const property
+ftp_client::void open(const string&in, uint16, const string&in = \\, const string&in = \\)
+ftp_client::void login(const string&in, const string&in)
+ftp_client::void logout()
+ftp_client::void close()
+ftp_client::string system_type()
+ftp_client::void set_file_type(ftp_file_type)
+ftp_client::ftp_file_type get_file_type() const property
+ftp_client::void set_working_directory(const string&in)
+ftp_client::string get_working_directory()
+ftp_client::void cdup()
+ftp_client::void rename(const string&in, const string&in)
+ftp_client::void remove(const string&in)
+ftp_client::void create_directory(const string&in)
+ftp_client::void remove_directory(const string&in)
+ftp_client::datastream@ begin_download(const string&in, const string&in = \\, int = STREAM_BYTE_ORDER_NATIVE)
+ftp_client::void end_download()
+ftp_client::datastream@ begin_upload(const string&in, const string&in = \\, int = STREAM_BYTE_ORDER_NATIVE)
+ftp_client::void end_upload()
+ftp_client::datastream@ begin_list(const string&in = \\, bool = false, const string&in = \\, int = STREAM_BYTE_ORDER_NATIVE)
+ftp_client::void end_list()
+ftp_client::void abort()
+ftp_client::int send_command(const string&in, string&inout)
+ftp_client::int send_command(const string&in, const string&in, string&inout)
+ftp_client::bool get_is_open() const property
+ftp_client::bool get_is_logged_in() const property
+ftp_client::bool get_is_secure() const property
+ftp_client::const string& get_welcome_message() const property

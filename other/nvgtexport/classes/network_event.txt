@@ -1,0 +1,2 @@
+const = string message;
+network_event::network_event& opAssign(const network_event&in)

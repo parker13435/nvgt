@@ -1,0 +1,37 @@
+const = string loaded_filename;
+sound::bool close()
+sound::bool load(const string&in, pack@ = sound_default_pack, bool = true)
+sound::bool load(sound_close_callback@, sound_length_callback@, sound_read_callback@, sound_seek_callback@, const string&in, const string&in = \\)
+sound::bool load(string&inout, uint, const string&in = \\, bool = false)
+sound::bool load_url(const string&in)
+sound::bool stream(const string&in, pack@ = sound_default_pack)
+sound::bool push_memory(const string&in, bool = false, int = 0, int = 0)
+sound::bool set_position(float, float, float, float, float, float, float, float, float)
+sound::bool set_mixer(mixer@ = null)
+sound::void set_hrtf(bool = true)
+sound::void set_length(float = 0.0)
+sound::bool set_fx(const string&in, int = - 1)
+sound::bool play(bool = true)
+sound::bool play_wait()
+sound::bool play_looped()
+sound::bool pause()
+sound::bool stop()
+sound::bool seek(float)
+sound::bool get_active() const property
+sound::bool get_playing() const property
+sound::bool get_paused() const property
+sound::bool get_sliding() const property
+sound::bool get_pan_sliding() const property
+sound::bool get_pitch_sliding() const property
+sound::bool get_volume_sliding() const property
+sound::float get_length() const property
+sound::float get_position() const property
+sound::float get_pitch() const property
+sound::void set_pitch(float) property
+sound::bool slide_pitch(float, uint)
+sound::float get_pan() const property
+sound::void set_pan(float) property
+sound::bool slide_pan(float, uint)
+sound::float get_volume() const property
+sound::void set_volume(float) property
+sound::bool slide_volume(float, uint)

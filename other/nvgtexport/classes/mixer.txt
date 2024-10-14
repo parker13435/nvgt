@@ -1,0 +1,16 @@
+mixer::bool set_fx(const string&in, int = - 1)
+mixer::bool set_position(float, float, float, float, float, float, float, float, float)
+mixer::bool set_mixer(mixer@ = null)
+mixer::bool get_sliding() const property
+mixer::bool get_pan_sliding() const property
+mixer::bool get_pitch_sliding() const property
+mixer::bool get_volume_sliding() const property
+mixer::float get_pitch() const property
+mixer::void set_pitch(float) property
+mixer::bool slide_pitch(float, uint)
+mixer::float get_pan() const property
+mixer::void set_pan(float) property
+mixer::bool slide_pan(float, uint)
+mixer::float get_volume() const property
+mixer::void set_volume(float) property
+mixer::bool slide_volume(float, uint)

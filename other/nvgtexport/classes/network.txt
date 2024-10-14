@@ -1,0 +1,29 @@
+network::void destroy(bool = true)
+network::bool setup_client(uint8, uint16)
+network::bool setup_server(uint16, uint8, uint16)
+network::bool setup_local_server(uint16, uint8, uint16)
+network::uint64 connect(const string&in, uint16)
+network::const network_event@ request(uint = 0)
+network::string get_peer_address(uint64) const
+network::uint get_peer_average_round_trip_time(uint64) const
+network::bool send(uint64, const string&in, uint8, bool = true)
+network::bool send_reliable(uint64, const string&in, uint8)
+network::bool send_unreliable(uint64, const string&in, uint8)
+network::bool send_peer(uint64, const string&in, uint8, bool = true)
+network::bool send_reliable_peer(uint64, const string&in, uint8)
+network::bool send_unreliable_peer(uint64, const string&in, uint8)
+network::bool disconnect_peer_softly(uint64)
+network::bool disconnect_peer(uint64)
+network::bool disconnect_peer_forcefully(uint64)
+network::array<uint64>@ get_peer_list() const
+network::uint64 get_connected_peers() const property
+network::bool get_packet_compression() const property
+network::void set_packet_compression(bool) property
+network::uint get_duplicate_peers() const property
+network::void set_duplicate_peers(uint) property
+network::uint get_bytes_received() const property
+network::uint get_bytes_sent() const property
+network::uint get_packets_received() const property
+network::uint get_packets_sent() const property
+network::void set_bandwidth_limits(uint, uint)
+network::bool get_active() const property

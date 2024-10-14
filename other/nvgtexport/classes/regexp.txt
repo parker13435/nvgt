@@ -1,0 +1,9 @@
+regexp::bool match(const string&in, uint64 = 0) const
+regexp::bool match(const string&in, uint64, int) const
+regexp::bool opEquals(const string&in) const
+regexp::string extract(const string&in, uint64 = 0) const
+regexp::string extract(const string&in, uint64, int) const
+regexp::int subst(string&inout, uint64, const string&in, int = RE_UTF8) const
+regexp::int subst(string&inout, const string&in, int = RE_UTF8) const
+regexp::array<string>@ split(const string&in, uint64 = 0) const
+regexp::array<string>@ split(const string&in, uint64, int) const

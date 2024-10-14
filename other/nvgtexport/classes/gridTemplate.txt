@@ -1,0 +1,5 @@
+grid<T>::T& opIndex(uint, uint)
+grid<T>::const T& opIndex(uint, uint) const
+grid<T>::void resize(uint, uint)
+grid<T>::uint width() const
+grid<T>::uint height() const

@@ -1,0 +1,103 @@
+var::var& opAssign(const var&in)
+var::var& opPostInc()
+var::var& opPostDec()
+var::int opCmp(const var&in) const
+var::var& opAssign(const int&in)
+var::int opAddAssign(const int&in)
+var::int opAdd(const int&in) const
+var::int opSubAssign(const int&in)
+var::int opSub(const int&in) const
+var::int opMulAssign(const int&in)
+var::int opMul(const int&in) const
+var::int opDivAssign(const int&in)
+var::int opDiv(const int&in) const
+var::int opImplConv() const
+var::var& opAssign(const uint&in)
+var::uint opAddAssign(const uint&in)
+var::uint opAdd(const uint&in) const
+var::uint opSubAssign(const uint&in)
+var::uint opSub(const uint&in) const
+var::uint opMulAssign(const uint&in)
+var::uint opMul(const uint&in) const
+var::uint opDivAssign(const uint&in)
+var::uint opDiv(const uint&in) const
+var::uint opImplConv() const
+var::var& opAssign(const int16&in)
+var::int16 opAddAssign(const int16&in)
+var::int16 opAdd(const int16&in) const
+var::int16 opSubAssign(const int16&in)
+var::int16 opSub(const int16&in) const
+var::int16 opMulAssign(const int16&in)
+var::int16 opMul(const int16&in) const
+var::int16 opDivAssign(const int16&in)
+var::int16 opDiv(const int16&in) const
+var::int16 opImplConv() const
+var::var& opAssign(const uint16&in)
+var::uint16 opAddAssign(const uint16&in)
+var::uint16 opAdd(const uint16&in) const
+var::uint16 opSubAssign(const uint16&in)
+var::uint16 opSub(const uint16&in) const
+var::uint16 opMulAssign(const uint16&in)
+var::uint16 opMul(const uint16&in) const
+var::uint16 opDivAssign(const uint16&in)
+var::uint16 opDiv(const uint16&in) const
+var::uint16 opImplConv() const
+var::var& opAssign(const int64&in)
+var::int64 opAddAssign(const int64&in)
+var::int64 opAdd(const int64&in) const
+var::int64 opSubAssign(const int64&in)
+var::int64 opSub(const int64&in) const
+var::int64 opMulAssign(const int64&in)
+var::int64 opMul(const int64&in) const
+var::int64 opDivAssign(const int64&in)
+var::int64 opDiv(const int64&in) const
+var::int64 opImplConv() const
+var::var& opAssign(const uint64&in)
+var::uint64 opAddAssign(const uint64&in)
+var::uint64 opAdd(const uint64&in) const
+var::uint64 opSubAssign(const uint64&in)
+var::uint64 opSub(const uint64&in) const
+var::uint64 opMulAssign(const uint64&in)
+var::uint64 opMul(const uint64&in) const
+var::uint64 opDivAssign(const uint64&in)
+var::uint64 opDiv(const uint64&in) const
+var::uint64 opImplConv() const
+var::var& opAssign(const float&in)
+var::float opAddAssign(const float&in)
+var::float opAdd(const float&in) const
+var::float opSubAssign(const float&in)
+var::float opSub(const float&in) const
+var::float opMulAssign(const float&in)
+var::float opMul(const float&in) const
+var::float opDivAssign(const float&in)
+var::float opDiv(const float&in) const
+var::float opImplConv() const
+var::var& opAssign(const double&in)
+var::double opAddAssign(const double&in)
+var::double opAdd(const double&in) const
+var::double opSubAssign(const double&in)
+var::double opSub(const double&in) const
+var::double opMulAssign(const double&in)
+var::double opMul(const double&in) const
+var::double opDivAssign(const double&in)
+var::double opDiv(const double&in) const
+var::double opImplConv() const
+var::var& opAssign(const bool&in)
+var::bool opAddAssign(const bool&in)
+var::bool opAdd(const bool&in) const
+var::bool opImplConv() const
+var::var& opAssign(const string&in)
+var::string opAddAssign(const string&in)
+var::string opAdd(const string&in) const
+var::string opImplConv() const
+var::void clear()
+var::bool get_empty() const property
+var::bool get_is_integer() const property
+var::bool get_is_signed() const property
+var::bool get_is_numeric() const property
+var::bool get_is_boolean() const property
+var::bool get_is_string() const property
+var::var& opAssign(const json_object&in) const
+var::json_object@ opImplCast() const
+var::var& opAssign(const json_array&in) const
+var::json_array@ opImplCast() const

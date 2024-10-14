@@ -1,0 +1,20 @@
+const = int voice;
+tts_voice::bool speak(const string&in, bool = false)
+tts_voice::bool speak_interrupt(const string&in)
+tts_voice::bool speak_to_file(const string&in, const string&in)
+tts_voice::bool speak_wait(const string&in, bool = false)
+tts_voice::string speak_to_memory(const string&in)
+tts_voice::bool speak_interrupt_wait(const string&in)
+tts_voice::bool refresh()
+tts_voice::bool stop()
+tts_voice::array<string>@ list_voices() const
+tts_voice::bool set_voice(int)
+tts_voice::int get_rate() const property
+tts_voice::void set_rate(int) property
+tts_voice::int get_pitch() const property
+tts_voice::void set_pitch(int) property
+tts_voice::int get_volume() const property
+tts_voice::void set_volume(int) property
+tts_voice::int get_voice_count() const property
+tts_voice::string get_voice_name(int) const
+tts_voice::bool get_speaking() const property

@@ -1,0 +1,5 @@
+fast_mutex::void lock(uint)
+fast_mutex::bool try_lock(uint)
+fast_mutex::void lock()
+fast_mutex::bool try_lock()
+fast_mutex::void unlock()

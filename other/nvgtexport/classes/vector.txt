@@ -1,0 +1,25 @@
+float = z 0;
+vector::vector& opAssign(const vector&in)
+vector::vector& opAddAssign(const vector&in)
+vector::vector& opSubAssign(const vector&in)
+vector::vector& opMulAssign(const float&in)
+vector::vector& opDivAssign(const float&in)
+vector::bool opEquals(const vector&in) const
+vector::vector opAdd(const vector&in) const
+vector::vector opSub(const vector&in) const
+vector::vector opMul(const vector&in) const
+vector::vector opDiv(const vector&in) const
+vector::vector opMul(float) const
+vector::vector opDiv(float) const
+vector::float length() const
+vector::float length2() const
+vector::bool get_is_zero() const property
+vector::float dot(const vector&in) const
+vector::float distance(const vector&in) const
+vector::float distance2(const vector&in) const
+vector::vector cross(const vector&in) const
+vector::vector& normalize()
+vector::vector normalized() const
+vector::vector absolute() const
+vector::vector rotate(const vector&in, const float) const
+vector::float angle(const vector&in) const

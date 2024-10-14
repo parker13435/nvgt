@@ -1,0 +1,24 @@
+sqlite3statement::int step()
+sqlite3statement::int reset()
+sqlite3statement::string get_expanded_sql_statement() property
+sqlite3statement::string get_sql_statement() property
+sqlite3statement::int get_bind_param_count() property
+sqlite3statement::int get_column_count() property
+sqlite3statement::int bind_blob(int, const string&in, bool = true)
+sqlite3statement::int bind_double(int, double)
+sqlite3statement::int bind_int(int, int)
+sqlite3statement::int bind_int64(int, int64)
+sqlite3statement::int bind_null(int)
+sqlite3statement::int bind_param_index(const string&in)
+sqlite3statement::string bind_param_name(int)
+sqlite3statement::int bind_text(int, const string&in, bool = true)
+sqlite3statement::int clear_bindings()
+sqlite3statement::string column_blob(int)
+sqlite3statement::int column_bytes(int)
+sqlite3statement::string column_decltype(int)
+sqlite3statement::double column_double(int)
+sqlite3statement::int column_int(int)
+sqlite3statement::int64 column_int64(int)
+sqlite3statement::string column_name(int)
+sqlite3statement::int column_type(int)
+sqlite3statement::string column_text(int)

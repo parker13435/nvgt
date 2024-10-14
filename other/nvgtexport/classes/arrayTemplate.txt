@@ -1,0 +1,32 @@
+array<T>::T& opIndex(uint)
+array<T>::const T& opIndex(uint) const
+array<T>::array<T>& opAssign(const array<T>&in)
+array<T>::void insert_at(uint, const T&in)
+array<T>::void insert_at(uint, const array<T>&inout)
+array<T>::void insert_last(const T&in)
+array<T>::void insert_last(const array<T>&inout)
+array<T>::void remove_at(uint)
+array<T>::void remove_last()
+array<T>::void remove_range(uint, uint)
+array<T>::uint length() const
+array<T>::void reserve(uint)
+array<T>::void resize(uint)
+array<T>::void sort_ascending()
+array<T>::void sort_ascending(uint, uint)
+array<T>::void sort_descending()
+array<T>::void sort_descending(uint, uint)
+array<T>::void reverse()
+array<T>::int find(const T&in) const
+array<T>::int find(uint, const T&in) const
+array<T>::int find_by_ref(const T&in) const
+array<T>::int find_by_ref(uint, const T&in) const
+array<T>::bool opEquals(const array<T>&in) const
+array<T>::bool is_empty() const
+array<T>::void sort(array<T>::less&in, uint = 0, uint = uint ( - 1 ))
+array<T>::uint size() const
+array<T>::bool empty() const
+array<T>::void push_back(const T&in)
+array<T>::void pop_back()
+array<T>::void insert(uint, const T&in)
+array<T>::void insert(uint, const array<T>&inout)
+array<T>::void erase(uint)

@@ -1,0 +1,31 @@
+datetime::datetime& opAssign(const datetime&in)
+datetime::datetime& opAssign(const timestamp&in)
+datetime::datetime& opAssign(double)
+datetime::datetime& set(int, int, int, int = 0, int = 0, int = 0, int = 0, int = 0)
+datetime::int get_year() const property
+datetime::int get_yearday() const property
+datetime::int get_month() const property
+datetime::int week(int = 1) const
+datetime::int get_weekday() const property
+datetime::int get_day() const property
+datetime::int get_hour() const property
+datetime::int get_hour12() const property
+datetime::bool get_AM() const property
+datetime::bool get_PM() const property
+datetime::int get_minute() const property
+datetime::int get_second() const property
+datetime::int get_millisecond() const property
+datetime::int get_microsecond() const property
+datetime::double get_julian_day() const property
+datetime::timestamp get_timestamp() const property
+datetime::int64 get_UTC_time() const property
+datetime::bool opEquals(const datetime&in) const
+datetime::int opCmp(const datetime&in) const
+datetime::datetime opAdd(const timespan&in) const
+datetime::datetime opSub(const timespan&in) const
+datetime::timespan opSub(const datetime&in) const
+datetime::datetime& opAddAssign(const timespan&in)
+datetime::datetime& opSubAssign(const timespan&in)
+datetime::void make_UTC(int)
+datetime::void make_local(int)
+datetime::string format(const string&in, int = 0xffff)

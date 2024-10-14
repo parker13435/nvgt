@@ -1,0 +1,9 @@
+int64 = flags 0;
+const = bool framed;
+any@ = primary_data 0;
+coordinate_map_area::void unframe()
+coordinate_map_area::void reframe()
+coordinate_map_area::void set(float, float, float, float, float, float, float)
+coordinate_map_area::void set_area(float, float, float, float, float, float)
+coordinate_map_area::void set_rotation(float)
+coordinate_map_area::bool is_in_area(float, float, float, float = 0.0, coordinate_map_filter_callback@ = null, int64 = 0, int64 = 0) const

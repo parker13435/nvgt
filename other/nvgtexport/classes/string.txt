@@ -1,0 +1,97 @@
+string::string& opAssign(const string&in)
+string::string& opAddAssign(const string&in)
+string::bool opEquals(const string&in) const
+string::int opCmp(const string&in) const
+string::string opAdd(const string&in) const
+string::uint length() const
+string::void resize(uint)
+string::void reserve(uint)
+string::bool is_empty() const
+string::const string get_opIndex(uint) const property
+string::void set_opIndex(uint, const string&in) property
+string::string& opAssign(double)
+string::string& opAddAssign(double)
+string::string opAdd(double) const
+string::string opAdd_r(double) const
+string::string& opAssign(float)
+string::string& opAddAssign(float)
+string::string opAdd(float) const
+string::string opAdd_r(float) const
+string::string& opAssign(int64)
+string::string& opAddAssign(int64)
+string::string opAdd(int64) const
+string::string opAdd_r(int64) const
+string::string& opAssign(uint64)
+string::string& opAddAssign(uint64)
+string::string opAdd(uint64) const
+string::string opAdd_r(uint64) const
+string::string& opAssign(bool)
+string::string& opAddAssign(bool)
+string::string opAdd(bool) const
+string::string opAdd_r(bool) const
+string::string substr(uint = 0, int = - 1) const
+string::int find_first(const string&in, uint = 0) const
+string::int find_first_of(const string&in, uint = 0) const
+string::int find_first_not_of(const string&in, uint = 0) const
+string::int find_last(const string&in, int = - 1) const
+string::int find_last_of(const string&in, int = - 1) const
+string::int find_last_not_of(const string&in, int = - 1) const
+string::void insert(uint, const string&in)
+string::void erase(uint, int = - 1)
+string::uint size() const
+string::bool empty() const
+string::int find(const string&in, uint = 0) const
+string::int rfind(const string&in, int = - 1) const
+string::array<string>@ split(const string&in, bool = true) const
+string::string slice(int = 0, int = 0) const
+string::string replace_range(uint, int, const string&in) const
+string::string replace(const string&in, const string&in, bool = true, uint = 0) const
+string::string& replace_this(const string&in, const string&in, bool = true, uint = 0) const
+string::string reverse_bytes() const
+string::string opMul(uint) const
+string::string& opMulAssign(uint)
+string::string format(const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null, const ?&in = null) const
+string::string opAdd(const var&in) const
+string::string& opAssign(const var&in)
+string::string& opAddAssign(const var&in)
+string::bool is_upper(const string&in = \\) const
+string::bool is_lower(const string&in = \\) const
+string::bool is_whitespace(const string&in = \\) const
+string::bool is_punctuation(const string&in = \\) const
+string::bool is_alphabetic(const string&in = \\) const
+string::bool is_digits(const string&in = \\) const
+string::bool is_alphanumeric(const string&in = \\) const
+string::string upper() const
+string::string& upper_this()
+string::string lower() const
+string::string& lower_this()
+string::string trim_whitespace_left() const
+string::string& trim_whitespace_left_this()
+string::string trim_whitespace_right() const
+string::string& trim_whitespace_right_this()
+string::string trim_whitespace() const
+string::string& trim_whitespace_this()
+string::string reverse(const string&in = \\) const
+string::string escape(bool = false) const
+string::string unescape() const
+string::bool starts_with(const string&in) const
+string::bool ends_with(const string&in) const
+string::string replace_characters(const string&in, const string&in) const
+string::string& replace_characters_this(const string&in, const string&in)
+string::void remove_UTF8_BOM()
+string::uint unpacket(uint, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)
+string::uint unpacket(uint, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out, const ?&out)

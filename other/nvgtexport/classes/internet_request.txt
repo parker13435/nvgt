@@ -1,0 +1,15 @@
+const = string auth_password;
+bool = follow_redirects 0;
+int = max_redirects 0;
+string = user_agent 0;
+internet_request::bool perform()
+internet_request::bool perform(const string&in)
+internet_request::bool post(const string&in, const string&in, const string&in = '')
+internet_request::bool mail(const string&in, const string&in, const string&in, const string&in) const
+internet_request::void set_url(const string&in) const
+internet_request::void set_path(const string&in) const
+internet_request::void set_authentication(string, string)
+internet_request::void set_payload(const string&in) const
+internet_request::void set_mail(const string&in, const string&in) const
+internet_request::void set_header(const string&in, const string&in) const
+internet_request::void reset() const

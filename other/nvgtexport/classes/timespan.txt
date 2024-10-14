@@ -1,0 +1,27 @@
+timespan::timespan& opAssign(const timespan&in)
+timespan::timespan& opAssign(int64)
+timespan::bool opEquals(const timespan&in) const
+timespan::bool opEquals(int64) const
+timespan::int opCmp(const timespan&in) const
+timespan::int opCmp(int64) const
+timespan::timespan opAdd(int64) const
+timespan::timespan opAdd(const timespan&in) const
+timespan::timespan opSub(int64) const
+timespan::timespan opSub(const timespan&in) const
+timespan::timespan& opAddAssign(int64)
+timespan::timespan& opAddAssign(const timespan&in)
+timespan::timespan& opSubAssign(int64)
+timespan::timespan& opSubAssign(const timespan&in)
+timespan::int get_days() const property
+timespan::int get_hours() const property
+timespan::int get_total_hours() const property
+timespan::int get_minutes() const property
+timespan::int get_total_minutes() const property
+timespan::int get_seconds() const property
+timespan::int get_total_seconds() const property
+timespan::int get_milliseconds() const property
+timespan::int get_total_milliseconds() const property
+timespan::int get_microseconds() const property
+timespan::int get_useconds() const property
+timespan::int get_total_microseconds() const property
+timespan::string format(const string&in = \%dd %H:%M:%S.%i\)

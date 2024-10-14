@@ -1,0 +1,15 @@
+thread_pool::void add_capacity(int)
+thread_pool::int get_capacity() const property
+thread_pool::void set_stack_size(int) property
+thread_pool::int get_stack_size() const property
+thread_pool::int get_used() const property
+thread_pool::int get_allocated() const property
+thread_pool::int get_available() const property
+thread_pool::void start(thread_callback@, dictionary@ = null)
+thread_pool::void start(thread_callback@, dictionary@, thread_priority)
+thread_pool::void start(thread_callback@, dictionary@, const string&in)
+thread_pool::void start(thread_callback@, dictionary@, const string&in, thread_priority)
+thread_pool::void stop_all()
+thread_pool::void join_all()
+thread_pool::void collect()
+thread_pool::const string& get_name() const property

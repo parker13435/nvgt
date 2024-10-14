@@ -1,0 +1,5 @@
+coordinate_map::coordinate_map_area@ add_area(float, float, float, float, float, float, float, any@, const string&in, const string&in, const string&in, int, int64 = 0)
+coordinate_map::array<coordinate_map_area@>@ get_areas(float, float, float, float = 0.0, coordinate_map_filter_callback@ = null, int64 = 0, int64 = 0) const
+coordinate_map::array<coordinate_map_area@>@ get_areas(float, float, float, float, float, float, float = 0.0, coordinate_map_filter_callback@ = null, int64 = 0, int64 = excluded_flags = 0) const
+coordinate_map::coordinate_map_area@ get_area(float, float, float, int = - 1, float = 0.0, coordinate_map_filter_callback@ = null, int64 = 0, int64 = 0) const
+coordinate_map::void reset()

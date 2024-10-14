@@ -1,0 +1,4 @@
+library::bool load(const string&in)
+library::bool unload()
+library::bool get_active() const property
+library::dictionary@ call(const string&in, ?&in = null, ?&in = null, ?&in = null, ?&in = null, ?&in = null, ?&in = null, ?&in = null, ?&in = null, ?&in = null, ?&in = null)

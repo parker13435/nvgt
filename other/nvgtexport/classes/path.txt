@@ -1,0 +1,42 @@
+path::spec::path& opAssign(const spec::path&in)
+path::spec::path& opAssign(const string&in)
+path::spec::path& assign(const string&in)
+path::spec::path& assign(const string&in, spec::path_style)
+path::spec::path& assign(const spec::path&in)
+path::spec::path& assign_directory(const string&in)
+path::spec::path& assign_directory(const string&in, spec::path_style)
+path::bool parse(const string&in)
+path::bool parse(const string&in, spec::path_style)
+path::string opImplConv() const
+path::string to_string(spec::path_style = spec :: PATH_STYLE_NATIVE) const
+path::spec::path& make_directory()
+path::spec::path& make_file()
+path::spec::path& make_parent()
+path::spec::path& make_absolute()
+path::spec::path& make_absolute(const spec::path&in)
+path::spec::path& append(const spec::path&in)
+path::spec::path& resolve(const spec::path&in)
+path::bool get_is_absolute() const property
+path::bool get_is_relative() const property
+path::bool get_is_directory() const property
+path::bool get_is_file() const property
+path::spec::path& set_node(const string&in)
+path::const string& get_node() const property
+path::spec::path& set_device(const string&in)
+path::const string& get_device() const property
+path::int get_depth() const property
+path::const string& get_opIndex(int) const property
+path::spec::path& push_directory(const string&in)
+path::spec::path& pop_directory()
+path::spec::path& pop_front_directory()
+path::spec::path& set_filename(const string&in)
+path::const string& get_filename() const property
+path::spec::path& set_basename(const string&in)
+path::string get_basename() const property
+path::spec::path& set_extension(const string&in)
+path::string get_extension() const property
+path::const string& get_vms_version() const property
+path::spec::path& clear()
+path::spec::path get_parent() const property
+path::spec::path absolute() const
+path::spec::path absolute(const spec::path&in) const

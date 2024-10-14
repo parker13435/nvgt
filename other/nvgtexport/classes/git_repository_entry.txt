@@ -1,0 +1,5 @@
+git_repository_entry::uint get_ctime() property
+git_repository_entry::uint get_mtime() property
+git_repository_entry::uint get_file_size() property
+git_repository_entry::string get_oid() property
+git_repository_entry::string get_path() property

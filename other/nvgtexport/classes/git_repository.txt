@@ -1,0 +1,22 @@
+git_repository::int open(const string&in)
+git_repository::int create(const string&in)
+git_repository::bool close()
+git_repository::int add(const string&in)
+git_repository::int add_all(array<string>@, int = 0)
+git_repository::int add_all(array<string>@, int, git_repository_match_callback@, const string&in = \\)
+git_repository::int update_all(array<string>@)
+git_repository::int update_all(array<string>@, git_repository_match_callback@, const string&in = \\)
+git_repository::int remove(const string&in)
+git_repository::int remove_all(array<string>@)
+git_repository::int remove_all(array<string>@, git_repository_match_callback@, const string&in = \\)
+git_repository::git_repository_commit@ commit(const string&in, const string&in, const string&in, const string&in = \HEAD\)
+git_repository::git_repository_commit@ commit(const string&in, const string&in, const string&in, const string&in, const string&in, const string&in = \HEAD\)
+git_repository::string commit_diff(git_repository_commit@, git_repository_commit@, uint = 3, uint = 0, uint = 0, uint = 1, array<string>@ = { }, const string&in = \a\, const string&in = \b\)
+git_repository::git_repository_commit@ commit_lookup(const string&in)
+git_repository::git_repository_commit_iterator@ commit_iterate(array<string>@ = { }, const string&in = '', const string&in = '', uint64 = 0, uint64 = 0, uint = 0, uint = 0)
+git_repository::git_repository_entry@ get_entry(uint)
+git_repository::int get_entry_count() property
+git_repository::int get_is_empty() property
+git_repository::string get_path() property
+git_repository::string get_workdir() property
+git_repository::bool get_active() property

@@ -1,0 +1,15 @@
+https_client::void set_keep_alive(bool) property
+https_client::bool get_keep_alive() const property
+https_client::bool get_connected() const property
+https_client::void abort()
+https_client::void set_host(const string&in) property
+https_client::const string& get_host() const property
+https_client::void set_port(uint16) property
+https_client::uint16 get_port() const property
+https_client::datastream@ send_request(http_request&inout, const string&in = \\, int = STREAM_BYTE_ORDER_NATIVE)
+https_client::datastream@ receive_response(http_response&inout, const string&in = \\, int = STREAM_BYTE_ORDER_NATIVE)
+https_client::bool peek_response(http_response&inout)
+https_client::void flush_request()
+https_client::void reset()
+https_client::bool get_secure() const property
+https_client::http_client@ opImplCast()

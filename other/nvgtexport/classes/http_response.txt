@@ -1,0 +1,46 @@
+http_response::http_response& opAssign(const http_response&in)
+http_response::const string& get_opIndex(const string&in) const property
+http_response::void set_opIndex(const string&in, const string&in) property
+http_response::void set(const string&in, const string&in)
+http_response::void add(const string&in, const string&in)
+http_response::const string& get(const string&in, const string&in = \\) const
+http_response::bool exists(const string&in) const
+http_response::bool empty() const
+http_response::uint64 size() const
+http_response::void erase(const string&in)
+http_response::void clear()
+http_response::const string& name_at(uint)
+http_response::const string& value_at(uint)
+http_response::internet_message_header@ opImplCast()
+http_response::bool write(datastream@) const
+http_response::bool read(datastream@)
+http_response::bool get_auto_decode() const property
+http_response::void set_auto_decode(bool) property
+http_response::string get_decoded(const string&in, const string&in = \\)
+http_response::int get_field_limit() const property
+http_response::void set_field_limit(int) property
+http_response::int get_name_length_limit() const property
+http_response::void set_name_length_limit(int) property
+http_response::int get_value_length_limit() const property
+http_response::void set_value_length_limit(int) property
+http_response::bool has_token(const string&in, const string&in)
+http_response::void set_version(const string&in) property
+http_response::const string& get_version() const property
+http_response::void set_content_length(int64) property
+http_response::int64 get_content_length() const property
+http_response::bool get_has_content_length() const property
+http_response::void set_transfer_encoding(const string&in) property
+http_response::string get_transfer_encoding() const property
+http_response::void set_chunked_transfer_encoding(bool) property
+http_response::bool get_chunked_transfer_encoding() const property
+http_response::void set_content_type(const string&in) property
+http_response::string get_content_type() const property
+http_response::void set_keep_alive(bool) property
+http_response::bool get_keep_alive() const property
+http_response::void set_status(http_status) property
+http_response::http_status get_status() const property
+http_response::void set_status(const string&in)
+http_response::void set_reason(const string&in) property
+http_response::const string& get_reason() const property
+http_response::void set_status_and_reason(http_status, const string&in)
+http_response::void set_status_and_reason(http_status)

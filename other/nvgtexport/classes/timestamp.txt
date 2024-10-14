@@ -1,0 +1,19 @@
+timestamp::timestamp& opAssign(const timestamp&in)
+timestamp::timestamp& opAssign(int64)
+timestamp::void update()
+timestamp::bool opEquals(const timestamp&in) const
+timestamp::int opCmp(const timestamp&in) const
+timestamp::timestamp opAdd(int64) const
+timestamp::timestamp opAdd(const timespan&in) const
+timestamp::timestamp opSub(int64) const
+timestamp::timestamp opSub(const timespan&in) const
+timestamp::int64 opSub(const timestamp&in) const
+timestamp::timestamp& opAddAssign(int64)
+timestamp::timestamp& opAddAssign(const timespan&in)
+timestamp::timestamp& opSubAssign(int64)
+timestamp::timestamp& opSubAssign(const timespan&in)
+timestamp::int64 get_UTC_time() const property
+timestamp::int64 get_elapsed() const property
+timestamp::bool has_elapsed(int64) const
+timestamp::int64 opImplConv() const
+timestamp::string format(const string&in, int = 0xffff)

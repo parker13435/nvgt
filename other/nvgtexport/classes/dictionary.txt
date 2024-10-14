@@ -1,0 +1,20 @@
+dictionary::dictionary& opAssign(const dictionary&in)
+dictionary::void set(const string&in, const ?&in)
+dictionary::bool get(const string&in, ?&out) const
+dictionary::void set(const string&in, const int64&in)
+dictionary::bool get(const string&in, int64&out) const
+dictionary::void set(const string&in, const double&in)
+dictionary::bool get(const string&in, double&out) const
+dictionary::bool exists(const string&in) const
+dictionary::bool is_empty() const
+dictionary::uint get_size() const
+dictionary::bool delete(const string&in)
+dictionary::void delete_all()
+dictionary::array<string>@ get_keys() const
+dictionary::dictionaryValue& opIndex(const string&in)
+dictionary::const dictionaryValue& opIndex(const string&in) const
+dictionary::bool empty() const
+dictionary::uint size() const
+dictionary::void erase(const string&in)
+dictionary::void clear()
+dictionary::string serialize()

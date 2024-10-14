@@ -1,0 +1,31 @@
+calendar::calendar& opAssign(const calendar&in)
+calendar::calendar& opAssign(const timestamp&in)
+calendar::calendar& opAssign(double)
+calendar::calendar& set(int, int, int, int = 0, int = 0, int = 0, int = 0, int = 0)
+calendar::int get_year() const property
+calendar::int get_yearday() const property
+calendar::int get_month() const property
+calendar::int week(int = 1) const
+calendar::int get_weekday() const property
+calendar::int get_day() const property
+calendar::int get_hour() const property
+calendar::int get_hour12() const property
+calendar::bool get_AM() const property
+calendar::bool get_PM() const property
+calendar::int get_minute() const property
+calendar::int get_second() const property
+calendar::int get_millisecond() const property
+calendar::int get_microsecond() const property
+calendar::double get_julian_day() const property
+calendar::int get_tzd() const property
+calendar::datetime get_UTC() const property
+calendar::timestamp get_timestamp() const property
+calendar::int64 get_UTC_time() const property
+calendar::bool opEquals(const calendar&in) const
+calendar::int opCmp(const calendar&in) const
+calendar::calendar opAdd(const timespan&in) const
+calendar::calendar opSub(const timespan&in) const
+calendar::timespan opSub(const calendar&in) const
+calendar::calendar& opAddAssign(const timespan&in)
+calendar::calendar& opSubAssign(const timespan&in)
+calendar::string format(const string&in)

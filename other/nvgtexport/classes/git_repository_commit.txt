@@ -1,0 +1,12 @@
+git_repository_commit::uint get_time() property
+git_repository_commit::int get_parent_count() property
+git_repository_commit::git_repository_commit@ get_parent(uint)
+git_repository_commit::const string get_id() property
+git_repository_commit::const string get_message() property
+git_repository_commit::string get_summary() property
+git_repository_commit::const string get_body() property
+git_repository_commit::const string get_raw_header() property
+git_repository_commit::const string get_committer() property
+git_repository_commit::const string get_committer_email() property
+git_repository_commit::const string get_author() property
+git_repository_commit::const string get_author_email() property

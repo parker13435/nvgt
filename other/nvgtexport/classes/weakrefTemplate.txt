@@ -1,0 +1,7 @@
+weakref<T>::T@ opImplCast()
+weakref<T>::T@ get() const
+weakref<T>::weakref<T>& opHndlAssign(const weakref<T>&in)
+weakref<T>::weakref<T>& opAssign(const weakref<T>&in)
+weakref<T>::bool opEquals(const weakref<T>&in) const
+weakref<T>::weakref<T>& opHndlAssign(T@)
+weakref<T>::bool opEquals(const T@) const

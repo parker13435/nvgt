@@ -1,0 +1,7 @@
+uint = max_statement_count 0;
+script_function::dictionary@ call(dictionary@, array<string>@ = null)
+script_function::dictionary@ opCall(dictionary@, array<string>@ = null)
+script_function::string get_decl() property
+script_function::string get_name() property
+script_function::string get_script() property
+script_function::int get_line() property

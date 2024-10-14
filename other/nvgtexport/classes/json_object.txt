@@ -1,0 +1,18 @@
+json_object::var@ get_opIndex(const string&in) const property
+json_object::void set_opIndex(const string&in, const var&in) property
+json_object::void set(const string&in, const var&in)
+json_object::var@ opCall(const string&in) const
+json_object::json_array@ get_array(const string&in) const
+json_object::json_object@ get_object(const string&in) const
+json_object::string stringify(uint = 0, int = - 1) const
+json_object::void stringify(datastream@, uint = 0, int = - 1) const
+json_object::uint size() const
+json_object::bool get_escape_unicode() const property
+json_object::void set_escape_unicode(bool) property
+json_object::void clear()
+json_object::void remove(const string&in)
+json_object::bool exists(const string&in) const
+json_object::bool is_array(const string&in) const
+json_object::bool is_null(const string&in) const
+json_object::bool is_object(const string&in) const
+json_object::array<string>@ get_keys() const
