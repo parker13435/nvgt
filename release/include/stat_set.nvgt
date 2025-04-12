@@ -26,8 +26,7 @@ class stat {
 
 	stat(const string&in name, var@ val, string text = "", stat_callback@ callback = default_stat_callback, dictionary@ user = null) {
 		this.name = name;
-		if (text.is_empty())
-			text = "%0";
+		if (text.is_empty()) text = "%0";
 		this.val = val;
 		this.text = text;
 		if (@callback == null) @callback = default_stat_callback;
@@ -35,15 +34,12 @@ class stat {
 		if (@user != null) this.user = user;
 	}
 
-	const string opImplConv() {
-		if (@this.callback !is null)
-			return this.callback(this);
+	string opImplConv() const {
+		if (@this.callback !is null) return this.callback(this);
 		return name +"=" + string(val);
 	}
 
-	double opConv() {
-		return val;
-	}
+	double opConv() const {return val;}
 
 	var@ opAssign(const string&in value) {
 		return this.val = value;
@@ -118,23 +114,31 @@ class stat_set {
 		string[]@ keys = other.stats.get_keys();
 		for (uint i = 0; i < keys.length(); i++) {
 			stat@ stat = other[keys[i]];
-			add(keys[i], stat.val, stat.text, stat.callback, stat.user);
+			stat@ s = add(keys[i], stat.val, stat.text, stat.callback, stat.user);
+			if (@s != null) s.sort_counter = stat.sort_counter;
 		}
 		return this;
 	}
 
-	void add(const string&in name, var@ value, const string&in text = "", stat_callback@ callback = null, dictionary@ user = null) {
-		if (!this.stats.exists(name)) this.stats.set(name, @stat(name, value, text, callback, user));
+	stat@ add(const string&in name, var@ value, const string&in text = "", stat_callback@ callback = null, dictionary@ user = null) {
+		if (!this.stats.exists(name)) {
+			stat s(name, value, text, callback, user);
+			this.stats.set(name, @s);
+			return s;
+		}
+		return null;
 	}
 
 	void update(const string&in name, var@ value) {
 		if (!stats.exists(name)) return;
 		cast<stat@>(stats[name]).val = value;
 	}
+
 	void mod(const string&in name, int64 value) {
 		if (!stats.exists(name)) return;
 		cast<stat@>(stats[name]).val += value;
 	}
+
 	void mod(const string&in name, double value) {
 		if (!stats.exists(name)) return;
 		cast<stat@>(stats[name]).val += value;
@@ -142,14 +146,14 @@ class stat_set {
 
 	bool delete(const string&in name) { return stats.delete(name); }
 
+	void reset() { stats.delete_all(); }
+
 	stat@ opIndex(const string&in stat_name) const {
 		if (!this.stats.exists(stat_name)) return null;
 		return cast<stat@>(this.stats[stat_name]);
 	}
 
-	int get_size() const property {
-		return stats.size();
-	}
+	int get_size() const property {return stats.size();}
 
 	string[]@ list(stat_sort_mode sort_mode = STAT_SORT_MODE_NONE, const string[]@ sort_in_front = {}, const string[]@ sort_behind = {}) const {
 		if (stats.empty()) return {};
@@ -175,15 +179,19 @@ class stat_set {
 		return result;
 	}
 
-	bool exists(const string& in stat_name) {
-		return this.stats.exists(stat_name);
+	stat@[] get_stats() {	
+		stat@[] r(stats.get_size());
+		string[]@ k = stats.get_keys();
+		for (uint i = 0; i < k.length(); i++) @r[i] = cast<stat@>(stats[k[i]]);
+		return r;
 	}
 
-	string[]@ opImplConv() {
+	bool exists(const string&in stat_name) const {return stats.exists(stat_name);}
+
+	string[]@ opImplConv() const {
 		string[] res;
-		string[]@ keys = this.stats.get_keys();
-		for (uint i = 0; i < keys.length(); i++)
-			res.insert_last(string(this.stats[keys[i]]));
+		string[]@ keys = stats.get_keys();
+		for (uint i = 0; i < keys.length(); i++) res.insert_last(string(this.stats[keys[i]]));
 		return res;
 	}
 
@@ -192,10 +200,8 @@ class stat_set {
 		for (uint i = 0; i < keys_to_add.length(); i++) {
 			string key = keys_to_add[i];
 			stat@ st = other[key];
-			if (this.exists(key))
-				this[key] += st.val;
-			else
-				add(key, st.val, st.text, st.callback, st.user);
+			if (this.exists(key)) this[key] += st.val;
+			else add(key, st.val, st.text, st.callback, st.user);
 		}
 		return this;
 	}
@@ -211,7 +217,7 @@ class stat_set {
 			ds.write_int8(t);
 			if (v.is_string) ds.write_string(v);
 			else if(v.is_integer) ds.write_7bit_encoded(v);
-			else if(v.is_numeric) ds.write_float(v);
+			else if(v.is_numeric) ds.write_double(v);
 		}
 		return ds.str();
 	}
@@ -225,8 +231,32 @@ class stat_set {
 			int8 t = ds.read_int8();
 			if (t == 1) update(name, ds.read_string());
 			else if (t == 2) update(name, ds.read_7bit_encoded());
-			else if (t == 3) update(name, ds.read_float());
+			else if (t == 3) update(name, ds.read_double());
 		}
 		return true;
+	}
+
+	string serialize_linear() {
+		string output;
+		string[]@ k = stats.get_keys();
+		for (uint i = 0; i < k.length(); i++) {
+			output += k[i] + "=" + string(cast<stat@>(stats[k[i]]).val) + "\n";
+		}
+		return output;
+	}
+
+	bool deserialize_linear(const string&in data) {
+		if (data.empty()) return false;
+		string[]@ ln = data.split("\n");
+		bool found_value = false;
+		for (uint i = 0; i < ln.length(); i++) {
+			string[]@ p = ln[i].split("=");
+			if (p.length() != 2) continue;
+			double number = parse_double(p[1]);
+			if (number != 0 or p[0] == "0") update(p[0], number);
+			else update(p[0], p[1]);
+			found_value = true;
+		}
+		return found_value;
 	}
 }
